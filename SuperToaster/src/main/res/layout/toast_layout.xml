@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:elevation="10dp"
+    app:cardElevation="8dp"
+    android:padding="10dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/GREEN"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cardview_dark_background"
+        android:layout_below="@id/header_title"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/BLACK"
+        android:layout_below="@id/divider"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/message"/>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_marginTop="2dp"
+      android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/message"
+       >
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@color/RED"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/WHITE"
+            android:text="@string/cancel"
+            android:id="@+id/cancelBtn"/>
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_marginLeft="30dp"
+            android:background="@color/HELINA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/WHITE"
+            android:text="@string/ok"
+            android:id="@+id/okBtn"/>
+    </LinearLayout>
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
